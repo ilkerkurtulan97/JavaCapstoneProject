@@ -10,7 +10,11 @@ import java.io.IOException;
 public class ExceptionHandler implements AutoCloseable{
 	private FileWriter fileWriter;
 
-    //Constructor
+    /**
+     * Creates ExceptionHandler with instance of FileWriter pointing on the provided fileName
+     * @param fileName
+     * @throws IOException
+     */
     public ExceptionHandler(String fileName) throws IOException {
         // Open the file for writing
         try {
@@ -22,12 +26,18 @@ public class ExceptionHandler implements AutoCloseable{
         }
     }
 
-    // Method to write data to the file
+    /**
+     * Writes data to the file
+     * @param data
+     * @throws IOException
+     */
     public void writeData(String data) throws IOException {
         fileWriter.write(data);
     }
 
-    //Necessary overriding for Autoclosable interface.
+    /**
+     * Closes the FileWriter instance
+     */
     @Override
     public void close() throws IOException {
     	/*

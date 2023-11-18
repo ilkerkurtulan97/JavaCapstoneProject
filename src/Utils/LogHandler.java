@@ -9,7 +9,10 @@ public class LogHandler{
 
     private static final String LOG_DIRECTORY = "logs";
 
-    //Creating LogFile
+    /**
+     * Creates log file with the provided file name
+     * @param className
+     */
     public static void createLogFile(String className) {
         String fileName = className + "_log.txt";
         File logFile = new File(LOG_DIRECTORY, fileName);
@@ -25,7 +28,11 @@ public class LogHandler{
         }
     }
 
-    //Move/rename log file
+    /**
+     * Moves the log file from old name to the new name
+     * @param oldClassName
+     * @param newClassName
+     */
     public static void moveLogFile(String oldClassName, String newClassName) {
         String oldFileName = oldClassName + "_log.txt";
         String newFileName = newClassName + "_log.txt";
@@ -38,7 +45,10 @@ public class LogHandler{
         }
     }
 
-    //Delete LogFile method
+    /**
+     * Deletes the log file if it already exists
+     * @param className
+     */
     public static void deleteLogFile(String className) {
         String fileName = className + "_log.txt";
         File logFile = new File(LOG_DIRECTORY, fileName);
