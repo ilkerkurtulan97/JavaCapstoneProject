@@ -1,0 +1,1 @@
+Charging log: Car charged at location 1 with Wind energy source in 10 minutes. Weather Condition: Rainy

@@ -1,0 +1,17 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# Bytecode directory
+bin/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Eclipse-specific files
+.classpath
+.project
+.settings/
